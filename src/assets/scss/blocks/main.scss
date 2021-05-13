@@ -1,0 +1,301 @@
+main{
+   padding-top: 100rem;
+}
+.bounceInUp.animated{
+    width: 539px;
+    height: 746px;
+    position: absolute;
+    object-fit: cover;
+    display: flex;
+    
+    top: 20px;
+    margin-top: 0px;
+}
+.image__h{
+   position: absolute;
+   right: 30px;
+   font-size: 50px;
+   font-weight: 700;
+   width: 100%;
+   left: 750px;
+   top: 100px;
+}
+.image__p{
+    position: absolute;
+    left: 750px;
+    font-size: 22px;
+    width: 270px;
+    margin-top: 300px;
+   font-size: 18px;
+   width: 500px;
+   top: 100px;
+}
+.image__btn{
+   position: absolute;
+   left: 450px;
+   top: 100px;
+   background-color: #fff;
+   border: 2px solid;
+       border-top-color: #202020;
+       border-right-color: #202020;
+       border-bottom-color: #202020;
+       border-left-color: #202020;
+   border-color: #202020;
+   border-radius: 7px;
+   margin-top: 450px;
+   width: 300px;
+   height: 45px;
+   margin-left: 300px;
+&:hover{
+    background-color: #202020;
+    transition: 0.5s;
+    color: #fff;
+    text-decoration: underline;
+   }
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-right: auto;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .swiper-button-next::after, .swiper-button-prev::after{
+      color: #0d0d0d;
+  }
+  .swiper-container.swiper-container-initialized.swiper-container-horizontal.swiper-container-pointer-events{
+   margin-left: auto;
+   margin-right: auto;
+     margin-top: 0px;
+  }
+  .image__swiper{
+      object-fit: cover;
+      width: 700px;
+  }
+  .swiper__p{
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      object-fit: cover;
+      margin-bottom: 10px;
+      visibility: hidden;
+  }
+  .image__swiper:hover .swiper__p{
+    -webkit-filter: brightness(40%);
+    filter: brightness(40%);
+      transition: 0.3s ease-in-out;
+      visibility: visible;
+  }
+  .new__item{
+    font-size: 35px;
+    font-weight: 700;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 600px;
+    margin-right: auto;
+  }
+  .item__p{
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 590px;
+    font-size: 15px;
+  }
+  * {
+    box-sizing: border-box;
+ }
+ .product-wrap {
+     display: inline-block;
+    border: 2px solid;
+    border-color: #0d0d0d;
+    border-radius: 8px;
+    margin-top: 170px;
+    background: white;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 40px;
+    width: 21%;
+ }
+ .product-wrap:hover{
+   border-color: white;
+   box-shadow: 0px 0 25px rgba(0, 0, 0, 0.5);
+   transform:translateY(-10px);
+   transition: 0.4s;
+ }
+ .product-item {
+    position: relative;
+    overflow: hidden;
+ }
+ .product-wrap img {
+    
+    width: 100%;
+    object-fit: cover;
+ }
+ .product-buttons {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    opacity: 0;
+    transition: .3s ease-in-out;
+ }
+ .button {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 2px solid #fff;
+    transform: translate(-50%, -50%) scale(0);
+    transition: .3s ease-in-out;
+ }
+ .button:before {
+    content: "\f07a";
+    font-family: FontAwesome;
+    margin-right: 10px;
+ }
+ .product-item:hover .product-buttons {
+    opacity: 1;
+ }
+ .product-item:hover .button {
+    transform: translate(-50%, -50%) scale(1);
+ }
+ .button:hover {
+    background: black;
+ }
+ .product-title {
+    color: #5e5e5e;
+ }
+ .product-title a {
+    text-decoration: none;
+    color: #2e2e2e;
+    font-weight: 600;
+    margin: 15px 0 5px;
+    padding-bottom: 7px;
+    display: block;
+    position: relative;
+    transition: .3s ease-in-out;
+ }
+ .product-title a:after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #2e2e2e;
+    left: 50%;
+    margin-left: -20px;
+    bottom: 0;
+    transition: .3s ease-in-out;
+ }
+ .product-title a:hover {
+    color: #5e5e5e;
+ }
+ .product-title:hover a:after {
+    background: #5e5e5e;
+ }
+ .product-price {
+    font-size: 20px;
+    color: #202020;
+    font-weight: 700;
+ }
+ .news{
+    margin-top: 80px;
+    margin-left: 60px;
+    display: flex;
+ }
+ h3.news__h3{
+    text-decoration: none;
+    margin-top: 15px;
+    color: #0d0d0d;
+   font-weight: 500;
+    font-size: 18px;
+ }
+ p.news__p{
+   text-decoration: none;
+   color: #0d0d0d;
+   font-size: 18px;
+ }
+ .news__a{
+    text-decoration: none;
+ }
+ .news__img{
+    width: 90%;
+ }
+ .fashion__brands{
+    margin-top: 80px;
+ }
+ .brands__h2{
+    margin-left: 550px;
+    font-weight: 600;
+    font-size: 30px;
+ }
+ .brands__img:hover{
+   transform:translateY(-10px);
+    transition: 0.4s;
+ }
+ .brands__img{
+    margin-top: 6px;
+ }
+ .brands__a{
+    text-decoration: none;
+ }
+ .jordan__h2{
+    margin-left: 550px;
+    font-weight: 600;
+    font-size: 30px;
+ }
+ .product__wrap{
+   display: inline-block;
+   border: 2px solid;
+   border-color: #0d0d0d;
+   border-radius: 8px;
+   margin-top: 30px;
+   background: white;
+   padding: 0 0 20px;
+   text-align: center;
+   font-size: 14px;
+   text-transform: uppercase;
+   margin-left: 40px;
+   width: 21%;
+   object-fit: cover;
+ }
+ .product__wrap:hover{
+   border-color: white;
+   box-shadow: 0px 0 25px rgba(0, 0, 0, 0.5);
+   transform:translateY(-10px);
+   transition: 0.4s;
+ }
+ .product__wrap img {
+   width: 100%;
+   object-fit: cover;
+}
+.info{
+   margin-top: 0;
+}

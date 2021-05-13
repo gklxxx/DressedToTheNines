@@ -1,0 +1,102 @@
+
+
+.nav__list{
+   display:flex;
+}
+.nav__link{
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $white;
+    text-decoration: none;
+    line-height: 12px;
+    padding: 15.5px;
+    transition: background-color .2s linear;
+    &:hover{
+        background-color: $white;
+        color: #202020;
+    }
+}
+.search{
+    background-color: $primary;
+    max-width: 210px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.search__input{
+    padding: 12px ;
+    background: none;
+    max-width: 180px;
+    width: 100%;
+    border: none;
+    font-family: inherit;
+    font-size: 12px;
+    color: $white;
+    &::placeholder{
+        color: rgba($white, .4 );
+    }
+    &.has-subnav{
+        position: relative;
+        &:after{
+        content: "";
+        display: block;
+        border-style: solid;
+        border-width: 6px 5px 0 5px;
+         border-color: white transparent transparent transparent;
+         position: absolute;
+         top: 50%;
+         right: 1.35rem;
+
+        }
+    }
+}
+.submenu{
+    background: $white;
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+    z-index: 5;
+    width: 100%;
+    transform: perspective(600px) rotateX(-90deg);
+    transform-origin: 0% 0%;
+    transition: .6s ease-in-out;
+    box-shadow: 0 5px 22px rgba(0, 0, 0, .25);
+}
+.nav ul li:hover .submenu{
+    visibility: visible;
+  padding-left:25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  opacity: 1;
+  transform: perspective(600px) rotateX(0deg);
+}
+.submenu a{
+    text-decoration: none;
+   line-height: 2;
+   color: #202020;
+   font-weight: 500;
+   font-size: 14px;
+}
+.submenu a:hover{
+    text-decoration: underline;
+}
+.submenu h2{
+    padding-bottom: 15px;
+    letter-spacing: 1px;
+    color: #202020;
+    font-weight: 600;
+}
+.subnav__picture{
+   top: 10px;
+   right: 30px;
+   width: 300px;
+   height: 200px;
+   position: absolute;
+}
+.picture__link{
+    top: 230px;
+    right: 202px;
+    position: absolute;
+
+}
